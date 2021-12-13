@@ -1,0 +1,138 @@
+<center>
+<body style="font-family: trattatello" bgcolor="#FCF0CC" text= "#5C7457">
+
+<h1 style="font-size: 85px;"> what i've been up to </h1>
+</body> 
+</center>
+<style>
+
+ .menu-bar {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-bar > a {
+    color: #5C7457;
+    font-family: trattatello;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .menu-bar > a:hover {
+    color: hsl(160, 70%, 50%);
+    border-bottom: 2px solid hsl(160, 70%, 50%);
+  }
+  
+  @media (max-width: 400px) {
+    .menu-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+.gallery {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 630px;
+    margin: 0 auto;
+   	position: relative;
+   	width: 200px;
+    height: 200px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+}
+
+.image {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 630px;
+    margin: 0 auto;
+   	position: relative;
+   	width: 200px;
+    height: 200px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: hsl(111, 14%, 56%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 185px;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+  .gallery:hover .text {
+    visibility: visible;
+    opacity: .5;
+    border: 2px solid hsl(111, 14%, 56%);
+    border-style: inset;
+  }
+
+  @media (max-width: 630px) {
+    .gallery > div {
+      width: calc(33vw - 10px);
+      height: calc(33vw - 10px);
+    }
+  }
+  
+</style>
+
+<nav class="menu-bar">
+  <a href="#">places i've been</a>
+  <a href="#">what i'm listening to</a>
+  <a href="#">what i'm watching</a>
+  <a href="#">what i'm reading</a>
+</nav>
+
+<div class="gallery">
+  <img class="image" src="india.JPG">
+  <p class="text">hozier's "hozier"</p></div>
+<div class="gallery">
+  <img class="image" src="india2.JPG">
+  <p class="text">silk sonic's "an evening with silk sonic"</p></div>
+<div class="gallery">
+  <img class="image" src="india3.JPG">
+  <p class="text">khalid's "scenic drive"</p></div>
+<div class="gallery">
+  <img class="image" src="uchicago.JPG">
+  <p class="text">amine's "twopointfive"</p></div>
+<div class="gallery">
+  <img class="image" src="chicago.jpg">
+  <p class="text">still woozy's "if this isn't nice i don't know what is"</p></div>
+<div class="gallery">
+  <img class="image" src="cobb.JPG">
+  <p class="text">halsey's "if i can't have love, i want power"</p></div>
+<div class="gallery">
+  <img class="image" src="nyc2.JPG">
+  <p class="text">lorde's "solar power"</p></div>
+<div class="gallery">
+  <img class="image" src="mexico.JPG">
+  <p class="text">sza's "still over it"</p></div>
+<div class="gallery">
+  <img class="image" src="nyc.JPG">
+  <p class="text">duckwrth's "SG8*"</p></div>
+<div class="gallery">
+  <img class="image" src="plane.JPG">
+  <p class="text">surfaces's "pacifico"</p></div>
+<div class="gallery">
+  <img class="image" src="peru.JPG">
+  <p class="text">between friends's "i like when you shine!"</p></div>
+
